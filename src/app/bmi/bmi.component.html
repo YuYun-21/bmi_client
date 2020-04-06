@@ -1,0 +1,21 @@
+<label>身高：</label>
+<input type="text" [(ngModel)]="bmiform.sg">
+
+<label>体重：</label>
+<input type="text" [(ngModel)]="bmiform.tz">
+
+<button (click)="getBMIvalue()" >计算</button>
+
+<div>
+你的身高是: {{ bmiform.sg }}你的体重是: {{ bmiform.tz }}
+
+</div>
+
+<div>
+<p>你的BMI值是: {{resultvo.value}}</p>
+<p>你的BMI结果: {{resultvo.state}}</p>
+<p>你的BMI建议: {{resultvo.suggest}}</p>
+
+</div>
+
+<img src="{{imgeurl}}" width="400px" height="400px"/>
